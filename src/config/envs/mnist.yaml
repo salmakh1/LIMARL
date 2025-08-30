@@ -1,0 +1,22 @@
+env: mnist
+
+
+
+test_greedy: True
+test_nepisode: 3
+test_interval: 1000
+log_interval: 1000
+runner_log_interval: 1000
+learner_log_interval: 1000
+t_max: 50000
+episode_limit: 10
+
+obs_last_action: False
+
+env_args:
+  n_agents: 4
+  patch_split: 4
+  episode_limit: 4
+  noise_std: 0.1
+  map_name: mnist
+
